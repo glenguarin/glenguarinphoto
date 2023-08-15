@@ -2,6 +2,7 @@ const Gallery = () => {
   return (
     <div className="about">
       <h2>Gallery</h2>
+
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident
         consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut
