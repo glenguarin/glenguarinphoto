@@ -1,67 +1,69 @@
 import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "../index.css";
 
-function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission, e.g., send data to a server
-    console.log(formData);
-  };
-
+const Contact = () => {
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <p className="contact">
-          Share your upcoming plans and imaginative thoughts – we're genuinely
-          excited to hear them! Connect with us here, and we can coordinate a
-          time to hop on a call with you. We're here to address all your queries
-          and gather more details about you and your wedding day. Feel free to
-          explore our complete pricing and package options here as well.
-        </p>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <Container>
+      <Row className="mb-5 mt-3">
+        <Col lg="8">
+          <h2 className="mb-4">Contact Me</h2>
+        </Col>
+      </Row>
+
+      <Row className="sec_sp">
+        <Col lg="5" className="mb-5">
+          <h3 className="color_sec py-4">Get in touch</h3>
+          <address>
+            <strong>Email : glenguarinphoto@gmail.com</strong>
+            <br />
+            <br />
+            <p>
+              <strong>Phone : +64 021 1720204</strong>
+            </p>
+          </address>
+        </Col>
+        <Col lg="7" className="d-flex align-items-center">
+          <form className="contact__form w-100">
+            <Row>
+              <Col lg="6" className="form-group">
+                <input
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  type="text"
+                />
+              </Col>
+              <Col lg="6" className="form-group">
+                <input
+                  className="form-control rounded-0"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                />
+              </Col>
+            </Row>
+            <textarea
+              className="form-control rounded-0 mt-3 mb-3"
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+            ></textarea>
+            <Row>
+              <Col lg="12" className="form-group">
+                <button className="btn ac_btn" type="submit">
+                  Send
+                </button>
+              </Col>
+            </Row>
+          </form>
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default Contact;
