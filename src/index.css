@@ -76,6 +76,16 @@ main {
   margin: 0 0 1rem;
 }
 
+.reviews {
+  font-size: larger;
+}
+
+.contact {
+  font-size: larger;
+}
+p {
+  margin-bottom: 40px;
+}
 /* help layout */
 
 /* faq */

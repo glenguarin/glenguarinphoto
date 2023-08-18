@@ -3,23 +3,25 @@ const Reviews = () => {
     <div className="reviews">
       <h2>Reviews</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor
-        assumenda, itaque nesciunt alias voluptatum nobis blanditiis eos
-        officiis aperiam earum eum vel quas odio optio, distinctio ab sunt unde
-        incidunt ipsum omnis amet magnam accusantium aut! Excepturi, cupiditate
-        iusto!
+        Yay! Photos are here! Thanks for capturing our wedding, Glen! The photos
+        are beautiful, and will allow us to look back on this special day for
+        the years to come. <br />- Kitty
       </p>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
-        veniam ducimus eligendi nihil, cumque ab eveniet modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem id
-        dicta iusto eaque numquam quaerat ad! Fugit velit beatae laudantium.
+        Many thanks Glen for capturing happy, emotional and intimate moments on
+        our special day. Kudos to your expertise and professionalism as
+        photographer. All the best on your business, for sure not just Pinoys
+        but everyone in Auckland will choose you as their photographer. 😍😍😍{" "}
+        <br /> - Richelle
       </p>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
-        veniam ducimus eligendi nihil, cumque ab eveniet modi architecto quidem,
-        non odit saepe facere voluptas esse mollitia illo fuga exercitationem id
-        dicta iusto eaque numquam quaerat ad! Fugit velit beatae laudantium.
+        Thank you so much. Hope you guys enjoyed your day with us. Blessings to
+        you guys ❤ <br /> - Maureen
+      </p>
+
+      <p>
+        These people will risk their lives to get the perfect shot!!! Love their
+        work and friendly company 🙂 <br /> - Kevin
       </p>
     </div>
   );
