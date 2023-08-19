@@ -24,7 +24,7 @@ const App = () => {
   ];
   const containerStyles = {
     width: "64rem",
-    height: "560px",
+    height: "38rem",
     margin: "0 auto",
   };
   return (

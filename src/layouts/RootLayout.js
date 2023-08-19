@@ -4,8 +4,11 @@ const RootLayout = () => {
   return (
     <div className="root-layout">
       <header>
-        <h1 className="center-item">GLEN GUARIN</h1>
-        <p className="label-photog center-item">PHOTOGRAPHY</p>
+        <p className="page-title center-item">
+          <span style={{ fontWeight: "bold" }}>GLEN GUARIN &nbsp;</span>
+
+          <span style={{ color: "#868e96" }}>PHOTOGRAPHY</span>
+        </p>
         <nav className="center-item">
           <NavLink to="/">Home</NavLink>
           <NavLink to="gallery">Gallery</NavLink>

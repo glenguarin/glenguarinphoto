@@ -1,7 +1,7 @@
 const Reviews = () => {
   return (
-    <div className="reviews">
-      <h2>Reviews</h2>
+    <div className="font__size reviews">
+      <h2 className="mb-4">Reviews</h2>
       <p>
         Yay! Photos are here! Thanks for capturing our wedding, Glen! The photos
         are beautiful, and will allow us to look back on this special day for

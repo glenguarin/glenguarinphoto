@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+import Nomatch from "./pages/Nomatch";
 
 import RootLayout from "./layouts/RootLayout";
 import Reviews from "./pages/Reviews";
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="gallery" element={<Gallery />} />
       <Route path="reviews" element={<Reviews />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<Nomatch />} />
     </Route>
   )
 );

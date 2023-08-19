@@ -63,7 +63,7 @@ header nav a:hover {
 /* page content */
 main {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .center-item {
@@ -72,30 +72,30 @@ main {
   align-items: center;
 }
 
-.label-photog {
-  margin: 0 0 1rem;
+.page-title {
+  font-size: larger;
 }
 
-.reviews {
-  font-size: larger;
+.font__size {
+  font-size: large;
 }
 
 .contact {
-  font-size: larger;
+  font-size: large;
 }
 p {
   margin-bottom: 40px;
 }
 
 .contact__form .form-control {
-  padding: 1.375rem 0.75rem;
+  padding: 0.5rem 0.5rem;
   line-height: 1.5;
   border-radius: 0 !important;
   border: 1px solid;
 }
 
-.btn {
-  background-color: #212529;
+.ac_btn {
+  padding: 0.5rem 2rem;
 }
 /* help layout */
 
