@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
   font-family: "Poppins";
   background: var(--secondary);
 }
@@ -22,48 +22,10 @@ p {
   margin: 20px 0;
 }
 
-button {
-  border: 0;
-  padding: 8px;
-  border-radius: 4px;
-  color: white;
-  background: var(--primary);
-  cursor: pointer;
-}
-
-/* navbar */
-header nav {
-  display: flex;
-  gap: 4.4rem;
-  justify-content: end;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-header nav h1 {
-  margin-right: auto;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #868e96;
-  padding: 6px;
-  border-radius: 4px;
-}
-
-header nav a.active {
-  color: var(--primary);
-  font-weight: bold;
-}
-
-header nav a:hover {
-  color: var(--primary);
-}
-
 /* page content */
 main {
-  max-width: 1200px;
-  margin: 20px auto;
+  /* max-width: 1200px; */
+  /* margin: 20px auto; */
 }
 
 .center-item {
