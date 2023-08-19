@@ -1,26 +1,31 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 
 const RootLayout = () => {
   return (
-    <div className="root-layout">
-      <header>
-        <p className="page-title center-item">
-          <span style={{ fontWeight: "bold" }}>GLEN GUARIN &nbsp;</span>
-
-          <span style={{ color: "#868e96" }}>PHOTOGRAPHY</span>
-        </p>
-        <nav className="center-item">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="gallery">Gallery</NavLink>
-          <NavLink to="reviews">Reviews</NavLink>
-          <NavLink to="contact">Contact</NavLink>
-        </nav>
-      </header>
-
+    <>
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="/">Glen Guarin Photography</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="gallery">Gallery</Nav.Link>
+              <Nav.Link href="reviews">Reviews</Nav.Link>
+              <Nav.Link href="contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <main>
         <Outlet />
       </main>
-    </div>
+    </>
   );
 };
 
