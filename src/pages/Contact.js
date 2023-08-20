@@ -1,77 +1,49 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "../index.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
-const Contact = () => {
+function Contact() {
   return (
-    <Container className="font__size">
-      <Row className="mb-4 mt-3">
-        <Col lg="8">
-          <h2 className="mb-4">Contact me</h2>
-        </Col>
-      </Row>
-      <Row className="mb-5">
-        <p>
-          Got big plans for an awesome event? We want to hear what you're
-          cooking up and how we can help make it picture-perfect. Grab a virtual
-          seat, and let's brainstorm over a digital coffee. Ready to make some
-          photo magic? Shoot us a message and let's chat!
-        </p>
-      </Row>
-
-      <Row className="sec_sp">
-        <Col lg="5" className="mb-5">
-          <h3 className="details__form color_sec">Get in touch</h3>
-          <address className="py-3">
-            <strong>Email : glenguarinphoto@gmail.com</strong>
-            <br />
-            <br />
-            <p>
-              <strong>Phone : +64 021 1720204</strong>
-            </p>
-          </address>
-        </Col>
-        <Col lg="7" className="d-flex align-items-center">
-          <form className="contact__form w-100">
-            <Row>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  type="text"
-                />
-              </Col>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control rounded-0"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                />
-              </Col>
-            </Row>
-            <textarea
-              className="form-control rounded-0 mt-3 mb-3"
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="5"
-            ></textarea>
-            <Row>
-              <Col lg="12" className="form-group">
-                <button className="ac_btn" type="submit">
-                  Send
-                </button>
-              </Col>
-            </Row>
-          </form>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <p className="text-center mt-2 pt-5 fs-2 mb-0">Contact me</p>
+      <h1 className="text-center mb-5">
+        Got big plans for an awesome event? Shoot me a message and let's chat!
+      </h1>
+      <div className="container">
+        <Form>
+          <Form.Group className="mb-3" controlId="contactForm.Name">
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="email" placeholder="John Doe" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="JohnDoe@example.com" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="contactForm.Name">
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control type="email" placeholder="+64 21 123 4567" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="contactForm.Name">
+            <Form.Label>Service your inquiring for</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="Ex. Wedding Photography, Family Portrait etc."
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="contactForm.Name">
+            <Form.Label>Location to shoot</Form.Label>
+            <Form.Control type="email" placeholder="Auckland" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control as="textarea" rows={3} />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </div>
+    </>
   );
-};
+}
 
 export default Contact;

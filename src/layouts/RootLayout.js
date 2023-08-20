@@ -8,9 +8,11 @@ import Navbar from "react-bootstrap/Navbar";
 const RootLayout = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="/">Glen Guarin Photography</Navbar.Brand>
+          <Navbar.Brand href="/" className="brand-name">
+            Glen Guarin Photography
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
