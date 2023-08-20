@@ -8,7 +8,7 @@ const Reviews = () => {
         Some feedbacks shared by delighted customers
       </h1>
       <Stack className="text-center text-white">
-        <Row className="bg-secondary mb-3">
+        <Row className="p-font bg-secondary mb-3">
           <p className="mt-5 fs-2">"The photos are beautiful"</p>
           <p className="mb-5">
             Yay! Thanks for capturing our wedding, Glen! The photos are
