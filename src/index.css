@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Forum&family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 
 /* :root {
   --primary: #212529;
@@ -8,15 +7,15 @@
 } */
 
 h1 {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .p-font {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 * {
@@ -25,6 +24,9 @@ p {
   box-sizing: border-box;
 }
 
+.text-large {
+  font-size: 400%;
+}
 p {
   margin: 20px 0;
 }
@@ -86,6 +88,11 @@ p {
 
 .gallery .pics:hover {
   filter: opacity(0.9);
+}
+
+.profile-pic {
+  width: 32rem;
+  height: 32rem;
 }
 
 @media (max-width: 991px) {
