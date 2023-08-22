@@ -17,7 +17,7 @@ function ImageSlider() {
       {images.map((image) => (
         <Carousel.Item key={image.id} interval={3000}>
           <img
-            className="d-block mw-100"
+            className="d-block w-100"
             src={image.image}
             alt={`Slide ${image.id}`}
           />

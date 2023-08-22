@@ -11,36 +11,41 @@ import { Stack } from "react-bootstrap";
 const App = () => {
   return (
     <div>
-      <ImageSlider />
+      <Container className="m-0 p-0 pb-5" fluid>
+        <ImageSlider />
+      </Container>
       <Container fluid>
-        <p className="text-center mt-5 pt-5 pb-0">
-          AUCKLAND BASED EVENT & PORTRAIT PHOTOGRAPHER
-        </p>
-        <h1 className="text-center pt-4 pb-3 fw-bold text-large">Welcome</h1>
-        <Container className="text-center pb-5">
-          Hi, I'm Glen, an Auckland-based event and portrait photographer with a
-          passion for capturing the beauty of authenticity. My photography style
-          is all about making moments look natural and embracing candid shots. I
-          believe that genuine emotions and spontaneous interactions are what
-          truly make a photograph come alive. Let's work together to create
-          stunning visuals that tell your story in the most real and unscripted
-          way possible.
+        <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
+          HELLO.
+        </h1>
+        <Container className="fs-5 text-center pb-5 lh-lg">
+          My name is Glen, I'm an Auckland-based event and portrait photographer
+          with a passion for capturing the beauty of authenticity. My
+          photography style is all about making moments look natural and
+          embracing candid shots. I believe that genuine emotions and
+          spontaneous interactions are what truly make a photograph come alive.
+          Let's work together to create stunning visuals that tell your story in
+          the most real and unscripted way possible.
         </Container>
         <Container className="d-flex justify-content-center">
           <Row>
-            <Button href="gallery" variant="dark" size="lg">
+            <Button className="btn-lg" href="gallery" variant="dark">
               VIEW GALLERY
             </Button>
           </Row>
         </Container>
-        <Container className="d-flex justify-content-center mt-5 pt-2">
+        <Container className="d-flex justify-content-center mt-5 pt-2 pb-5">
           <Image className="profile-pic" src={myImage} roundedCircle />
         </Container>
         <Container>
-          <p className="text-center mt-2 pt-5 fs-2 mb-0">Reviews</p>
-          <h1 className="text-center mb-5">
-            Some feedbacks shared by delighted customers
+          <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
+            COMPLIMENTS.
           </h1>
+        </Container>
+        <Container className="fs-5 text-center pb-5 lh-lg">
+          Some feedback from my customers.
+        </Container>
+        <Container>
           <Stack className="text-center text-white">
             <Row className="p-font bg-secondary mb-3">
               <p className="mt-5 fs-2">"The photos are beautiful"</p>
