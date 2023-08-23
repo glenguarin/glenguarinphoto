@@ -13,7 +13,7 @@ function ImageSlider() {
   }, []);
 
   return (
-    <Carousel>
+    <Carousel fade>
       {images.map((image) => (
         <Carousel.Item key={image.id} interval={3000}>
           <img

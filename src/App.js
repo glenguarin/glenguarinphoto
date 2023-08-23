@@ -12,14 +12,12 @@ import Gallery from "./pages/Gallery";
 import Nomatch from "./pages/Nomatch";
 
 import RootLayout from "./layouts/RootLayout";
-import Reviews from "./pages/Reviews";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="gallery" element={<Gallery />} />
-      <Route path="reviews" element={<Reviews />} />
       <Route path="contact" element={<Contact />} />
       <Route path="*" element={<Nomatch />} />
     </Route>
