@@ -51,14 +51,10 @@ const App = () => {
         <Container className="fs-5 text-center pb-5 lh-lg">
           Client feedback.
         </Container>
-        <CommentsSlider />
       </Container>
-      <Container>
-        <Gallery1 />
-      </Container>
-      <Container>
-        <Gallery2 />
-      </Container>
+      <CommentsSlider />
+      <Gallery1 />
+      <Gallery2 />
     </div>
   );
 };
