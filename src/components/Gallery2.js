@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
 
-const Gallery1 = () => {
+const Gallery2 = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
     // Fetch the JSON data
-    fetch("/gallery1.json")
+    fetch("/gallery2.json")
       .then((response) => response.json())
       .then((data) => setImages(data))
       .catch((error) => console.error("Error fetching images:", error));
@@ -14,7 +14,9 @@ const Gallery1 = () => {
 
   return (
     <>
-      <p className="text-center mt-2 pt-5 fs-2 mb-5">Wedding and Prenup</p>
+      <p className="text-center mt-2 pt-5 fs-2 mb-5">
+        Events and Family Portraits
+      </p>
 
       <div className="gallery1">
         {images.map((item, index) => {
@@ -29,4 +31,4 @@ const Gallery1 = () => {
   );
 };
 
-export default Gallery1;
+export default Gallery2;

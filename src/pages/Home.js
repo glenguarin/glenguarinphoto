@@ -10,6 +10,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import myImage from "../images/profileimg.png";
 import { Stack } from "react-bootstrap";
+import Gallery2 from "../components/Gallery2";
 
 const App = () => {
   return (
@@ -54,6 +55,9 @@ const App = () => {
       </Container>
       <Container>
         <Gallery1 />
+      </Container>
+      <Container>
+        <Gallery2 />
       </Container>
     </div>
   );
