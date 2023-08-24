@@ -18,7 +18,7 @@ const App = () => {
         <ImageSlider />
       </Container>
       <Container fluid>
-        <Container className="fs-5 pt-5 m-5 text-center lh-lg">
+        <Container className="fs-5 text-center mt-5 pb-5 lh-lg">
           Weddings, Events and Familty Portraits
         </Container>
 
