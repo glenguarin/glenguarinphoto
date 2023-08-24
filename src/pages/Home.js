@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImageSlider from "../components/ImageSlider";
 import CommentsSlider from "../components/CommentsSlider";
+import Gallery1 from "../components/Gallery1";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -50,6 +51,9 @@ const App = () => {
           Client feedback.
         </Container>
         <CommentsSlider />
+      </Container>
+      <Container>
+        <Gallery1 />
       </Container>
     </div>
   );
