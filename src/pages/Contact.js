@@ -1,5 +1,6 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Container } from "react-bootstrap";
 
 function Contact() {
   return (
@@ -8,7 +9,7 @@ function Contact() {
       <h1 className="text-center mb-5">
         Got big plans for an awesome event? Shoot me a message and let's chat!
       </h1>
-      <div className="container">
+      <Container>
         <Form>
           <Form.Group className="mb-3" controlId="contactForm.Name">
             <Form.Label>Name</Form.Label>
@@ -41,7 +42,7 @@ function Contact() {
             Submit
           </Button>
         </Form>
-      </div>
+      </Container>
     </>
   );
 }

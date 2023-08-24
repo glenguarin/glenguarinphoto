@@ -43,7 +43,7 @@ const App = () => {
         </Container>
         <Container>
           <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
-            TESTIMONIAL.
+            TESTIMONIALS.
           </h1>
         </Container>
         <Container className="fs-5 text-center pb-5 lh-lg">
