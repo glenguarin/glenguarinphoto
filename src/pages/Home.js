@@ -17,9 +17,11 @@ const App = () => {
         <ImageSlider />
       </Container>
       <Container fluid>
-        <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
-          HELLO.
-        </h1>
+        <Container className="fs-5 pt-5 m-5 text-center lh-lg">
+          Weddings, Events and Familty Portraits
+        </Container>
+
+        <h1 className="text-center mt-5 pb-3 fw-bold text-large">HELLO.</h1>
         <Container className="fs-5 text-center pb-5 lh-lg">
           My name is Glen, I'm an Auckland-based event and portrait photographer
           with a passion for capturing the beauty of authenticity. My
@@ -44,11 +46,9 @@ const App = () => {
             TESTIMONIAL.
           </h1>
         </Container>
-
         <Container className="fs-5 text-center pb-5 lh-lg">
           Client feedback.
         </Container>
-
         <CommentsSlider />
       </Container>
     </div>
