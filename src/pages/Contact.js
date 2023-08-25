@@ -1,7 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Container, Col, Row } from "react-bootstrap";
 import ContactImageSlider from "../components/ContacttImageSlider";
+import { Envelope, DeviceMobile } from "@phosphor-icons/react";
 
 function Contact() {
   return (
@@ -37,7 +40,11 @@ function Contact() {
                 controlId="exampleForm.ControlTextarea1"
               >
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="Type your message here."
+                />
               </Form.Group>
               <Button variant="primary" type="submit">
                 Send Message
@@ -46,15 +53,19 @@ function Contact() {
           </Col>
           <Col>
             <ContactImageSlider />
-            <Row className="justify-content-end">
-              <Col d-flex justify-content-between>
-                <p>E-mail Address</p>
-                <p>glenguarinphoto@gmail.com</p>
-              </Col>
-              <Col>
-                <p>Phone Number</p>
-                <p>021 172 0204</p>
-              </Col>
+            <Row className="text-end">
+              <p className="mt-2 mb-0 fw-bold">
+                <Envelope size={22} />
+                E-mail Address
+              </p>
+              <p className="fst-italic">glenguarinphoto@gmail.com</p>
+            </Row>
+            <Row className="text-end">
+              <p className="mt-1 mb-0 fw-bold">
+                <DeviceMobile className="text-end" size={22} />
+                Phone Number
+              </p>
+              <p className="fst-italic">021 172 0204</p>
             </Row>
           </Col>
         </Row>

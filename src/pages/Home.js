@@ -19,7 +19,7 @@ const App = () => {
         <ImageSlider />
       </Container>
       <Container fluid>
-        <Container className="fs-5 text-center mt-5 pb-5 lh-lg">
+        <Container className="fs-2 text-center mt-5 pb-5 lh-lg">
           Weddings, Events and Familty Portraits
         </Container>
 
@@ -35,7 +35,7 @@ const App = () => {
         </Container>
         <Container className="d-flex justify-content-center">
           <Row>
-            <Button className="btn-lg" href="gallery" variant="dark">
+            <Button className="btn-lg p-3" href="gallery" variant="dark">
               VIEW GALLERY
             </Button>
           </Row>
@@ -48,11 +48,14 @@ const App = () => {
             TESTIMONIALS.
           </h1>
         </Container>
-        <Container className="fs-5 text-center pb-5 lh-lg">
+        <Container className="fs-2 text-center pb-5 lh-lg">
           Client feedback.
         </Container>
       </Container>
       <CommentsSlider />
+      <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
+        GALLERY.
+      </h1>
       <Gallery1 />
       <Gallery2 />
     </div>
