@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+
 import Nomatch from "./pages/Nomatch";
 
 import RootLayout from "./layouts/RootLayout";

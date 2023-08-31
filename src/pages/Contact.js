@@ -1,12 +1,34 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Container, Col, Row } from "react-bootstrap";
 import ContactImageSlider from "../components/ContacttImageSlider";
 import { Envelope, DeviceMobile } from "@phosphor-icons/react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3y0ffkz",
+        "template_lrljezl",
+        form.current,
+        "dkJzF9fW6EIm-Hm-q"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <p className="text-center mt-2 pt-5 fs-2 mb-5">Contact</p>
@@ -14,33 +36,37 @@ function Contact() {
         <Row>
           <Col>
             <h1 className="text-center mb-5">...Let's Talk</h1>
-            <Form>
-              <Form.Group className="mb-3" controlId="contactForm.Name">
+            <Form ref={form} onSubmit={sendEmail}>
+              <Form.Group className="mb-3" controlId="from_name">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="email" placeholder="John Doe" />
+                <Form.Control
+                  type="text"
+                  name="from_name"
+                  placeholder="John Doe"
+                />
               </Form.Group>
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlInput2"
-              >
+              <Form.Group className="mb-3" controlId="reply_to">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="JohnDoe@example.com" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="contactForm.Name">
-                <Form.Label>Service your inquiring for</Form.Label>
                 <Form.Control
                   type="email"
+                  name="reply_to"
+                  placeholder="JohnDoe@example.com"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="service_type">
+                <Form.Label>Service your inquiring for</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="service"
                   placeholder="Ex. Wedding Photography, Family Portrait etc."
                 />
               </Form.Group>
 
-              <Form.Group
-                className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              >
+              <Form.Group className="mb-3" controlId="message">
                 <Form.Label>Message</Form.Label>
                 <Form.Control
+                  name="message"
                   as="textarea"
                   rows={3}
                   placeholder="Type your message here."
@@ -58,7 +84,7 @@ function Contact() {
                 <Envelope size={22} />
                 E-mail Address
               </p>
-              <p className="fst-italic">glenguarinphoto@gmail.com</p>
+              <p className="fst-italic">glenguarinphotography@gmail.com</p>
             </Row>
             <Row className="text-end">
               <p className="mt-1 mb-0 fw-bold">
