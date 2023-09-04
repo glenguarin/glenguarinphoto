@@ -4,14 +4,29 @@ import Button from "react-bootstrap/Button";
 import { Container, Col, Row } from "react-bootstrap";
 import ContactImageSlider from "../components/ContacttImageSlider";
 import { Envelope, DeviceMobile } from "@phosphor-icons/react";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
+  const [formValid, setFormValid] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const formData = new FormData(form.current);
+    let isEmpty = false;
+    formData.forEach((value) => {
+      if (!value) {
+        isEmpty = true;
+      }
+    });
+
+    if (isEmpty) {
+      alert("Please fill in all fields");
+      setFormValid(false);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -78,6 +93,12 @@ function Contact() {
                 Send Message
               </Button>
             </Form>
+            {!formValid && (
+              <div className="text-danger mt-2">
+                {" "}
+                Please fill in all fields.
+              </div>
+            )}
           </Col>
           <Col>
             <ContactImageSlider />
