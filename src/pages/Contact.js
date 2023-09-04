@@ -23,6 +23,8 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Sent!");
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
