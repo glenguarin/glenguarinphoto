@@ -20,7 +20,7 @@ const App = () => {
         Weddings, Events and Familty Portraits
       </div>
       <h1 className="text-center mt-5 pb-3 fw-bold text-large">HELLO.</h1>
-      <div className="fs-5 text-center pb-5 lh-lg">
+      <Container className="fs-5 text-center pb-5 lh-lg" fluid="md">
         My name is Glen, I'm an Auckland-based event and portrait photographer
         with a passion for capturing the beauty of authenticity. My photography
         style is all about making moments look natural and embracing candid
@@ -28,7 +28,7 @@ const App = () => {
         what truly make a photograph come alive. Let's work together to create
         stunning visuals that tell your story in the most real and unscripted
         way possible.
-      </div>
+      </Container>
       <div className="d-flex justify-content-center">
         <Button className="btn-lg p-3" href="gallery" variant="dark">
           VIEW GALLERY

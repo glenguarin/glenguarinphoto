@@ -120,17 +120,32 @@ p {
   .text-large {
     font-size: 700%;
   }
+
+  .profile-pic {
+    width: 26rem;
+    height: 26rem;
+  }
 }
 
 @media (max-width: 768px) {
   .text-large {
     font-size: 500%;
   }
+
+  .profile-pic {
+    width: 22rem;
+    height: 22rem;
+  }
 }
 
 @media (max-width: 576px) {
   .text-large {
     font-size: 400%;
+  }
+
+  .profile-pic {
+    width: 18rem;
+    height: 18rem;
   }
 }
 
@@ -145,6 +160,6 @@ p {
   }
 
   .text-large {
-    font-size: 350%;
+    font-size: 300%;
   }
 }
