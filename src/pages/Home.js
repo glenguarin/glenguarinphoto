@@ -15,43 +15,33 @@ import Gallery2 from "../components/Gallery2";
 const App = () => {
   return (
     <div>
-      <Container className="m-0 p-0 pb-5" fluid>
-        <ImageSlider />
-      </Container>
-      <Container fluid>
-        <Container className="fs-2 text-center mt-5 pb-5 lh-lg">
-          Weddings, Events and Familty Portraits
-        </Container>
+      <ImageSlider />
+      <div className="fs-2 text-center mt-5 pb-5 lh-lg">
+        Weddings, Events and Familty Portraits
+      </div>
+      <h1 className="text-center mt-5 pb-3 fw-bold text-large">HELLO.</h1>
+      <div className="fs-5 text-center pb-5 lh-lg">
+        My name is Glen, I'm an Auckland-based event and portrait photographer
+        with a passion for capturing the beauty of authenticity. My photography
+        style is all about making moments look natural and embracing candid
+        shots. I believe that genuine emotions and spontaneous interactions are
+        what truly make a photograph come alive. Let's work together to create
+        stunning visuals that tell your story in the most real and unscripted
+        way possible.
+      </div>
+      <div className="d-flex justify-content-center">
+        <Button className="btn-lg p-3" href="gallery" variant="dark">
+          VIEW GALLERY
+        </Button>
+      </div>
+      <div className="d-flex justify-content-center mt-5 pt-2 pb-5">
+        <Image className="profile-pic" src={myImage} roundedCircle />
+      </div>
+      <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
+        TESTIMONIALS.
+      </h1>
+      <div className="fs-2 text-center pb-5 lh-lg">Client feedback.</div>
 
-        <h1 className="text-center mt-5 pb-3 fw-bold text-large">HELLO.</h1>
-        <Container className="fs-5 text-center pb-5 lh-lg">
-          My name is Glen, I'm an Auckland-based event and portrait photographer
-          with a passion for capturing the beauty of authenticity. My
-          photography style is all about making moments look natural and
-          embracing candid shots. I believe that genuine emotions and
-          spontaneous interactions are what truly make a photograph come alive.
-          Let's work together to create stunning visuals that tell your story in
-          the most real and unscripted way possible.
-        </Container>
-        <Container className="d-flex justify-content-center">
-          <Row>
-            <Button className="btn-lg p-3" href="gallery" variant="dark">
-              VIEW GALLERY
-            </Button>
-          </Row>
-        </Container>
-        <Container className="d-flex justify-content-center mt-5 pt-2 pb-5">
-          <Image className="profile-pic" src={myImage} roundedCircle />
-        </Container>
-        <Container>
-          <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
-            TESTIMONIALS.
-          </h1>
-        </Container>
-        <Container className="fs-2 text-center pb-5 lh-lg">
-          Client feedback.
-        </Container>
-      </Container>
       <CommentsSlider />
       <h1 className="text-center mt-5 pt-5 pb-3 fw-bold text-large">
         GALLERY.
