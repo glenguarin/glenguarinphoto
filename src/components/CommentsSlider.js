@@ -6,7 +6,7 @@ const Reviews = () => {
     <div>
       <Container>
         <Row>
-          <Col className="d-flex">
+          <Col className="d-flex" xs={12} md={6}>
             <Card>
               <Card.Header className="text-center fs-3 h-50">
                 "The photos are beautiful"
@@ -26,7 +26,7 @@ const Reviews = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="d-flex">
+          <Col className="d-flex" xs={12} md={6}>
             <Card>
               <Card.Header className="text-center fs-3 h-50">
                 "Kudos to your expertise and professionalism"
@@ -49,7 +49,7 @@ const Reviews = () => {
         </Row>
         <br />
         <Row>
-          <Col className="d-flex">
+          <Col className="d-flex" xs={12} md={6}>
             <Card>
               <Card.Header className="text-center fs-3 h-50">
                 "Thank you so much"
@@ -68,7 +68,7 @@ const Reviews = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="d-flex">
+          <Col className="d-flex" xs={12} md={6}>
             <Card>
               <Card.Header className="text-center fs-3 h-50">
                 "These people will risk their lives to get the perfect shot!!!"

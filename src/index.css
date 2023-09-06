@@ -136,6 +136,10 @@ p {
     width: 22rem;
     height: 22rem;
   }
+
+  .ishidden {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -161,5 +165,13 @@ p {
 
   .text-large {
     font-size: 300%;
+  }
+
+  .lets-talk {
+    font-size: x-large;
+  }
+
+  .ishidden {
+    display: none;
   }
 }

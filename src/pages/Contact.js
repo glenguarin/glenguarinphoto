@@ -51,8 +51,8 @@ function Contact() {
       <p className="text-center mt-2 pt-5 fs-2 mb-5">Contact</p>
       <Container>
         <Row>
-          <Col>
-            <h1 className="text-center mb-5">...Let's Talk</h1>
+          <Col xs={12} md={6}>
+            <h1 className="lets-talk text-center mb-5">...Let's Talk</h1>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3" controlId="from_name">
                 <Form.Label>Name</Form.Label>
@@ -101,7 +101,9 @@ function Contact() {
             )}
           </Col>
           <Col>
-            <ContactImageSlider />
+            <div className="ishidden">
+              <ContactImageSlider />
+            </div>
             <Row className="text-end">
               <p className="mt-2 mb-0 fw-bold">
                 <Envelope size={22} />
