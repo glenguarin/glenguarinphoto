@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavDropdown } from "react-bootstrap";
 
 const RootLayout = () => {
   return (
@@ -19,6 +19,11 @@ const RootLayout = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="gallery">Gallery</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
+              <NavDropdown title="Gallery - Events" id="basic-nav-dropdown">
+                <NavDropdown.Item href="firstbitegallery">
+                  Kain Sining - First Bite
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
